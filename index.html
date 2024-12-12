@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Nos Casamos!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="portada">
+        <h3 class="encabezado-subtitulo">Nuestro casamiento</h3>
+        <h1 class="nombres">LU<br><span>&</span> <br>REN</h1>  
+        <h3 class="fechas">15 de Febrero 2025</h3>
+              
+    </div>
+    <div class="contenedor-principal">
+        <div class="contenedor-info bg-light">
+            <h3 class="text-center mt-3">Faltan</h3>
+            <div class="countdown-container">
+                            <div class="countdown-item">
+                                <span id="dias" class="countdown-number">00</span>
+                                <span class="countdown-label">Días</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="horas" class="countdown-number">00</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutos" class="countdown-number">00</span>
+                                <span class="countdown-label">Minutos</span>
+                            </div>
+            </div>
+            <div class="civil">
+                <h3 class="text-center">Civil</h3>
+                <h2 class="text-center fecha-civil">14 de Febrero 2025</h2>
+                <h3 class="text-center">10:15hs<h3>
+            </div>
+            <div class="fiesta elegant-section">
+                <h3 class="text-center elegant-title">Ceremonia & Fiesta</h3>
+                <p class="text-center rsvp-notice">Te esperamos para compartir con nosotros este momento tan especial.</p>
+
+                <h2 class="text-center venue-name">Tao's Eventos</h2>
+                <p class="text-center venue-address">Ruta 7 km 104</p>
+                <h1 class="text-center fecha-fiesta">15 de Febrero</h1>
+                <h3 class="text-center ceremony-time">19:00 hs</h3>
+                
+                <hr>
+                <div class="dress-code-section elegant-section mt-4">
+                    <h3 class="text-center elegant-subtitle">Dress Code</h3>
+                    <p class="text-center dress-code-text">Elegante Sport</p>
+                </div>
+                <hr>
+                <div class="bebidas-section elegant-section mt-4">
+                    <h3 class="text-center elegant-subtitle">Bebidas</h3>
+                    <p class="text-center bebidas-text">Te pedimos que traigas las bebidas que vas a consumir durante la fiesta</p>
+                </div>
+                
+
+
+
+
+                <div class="confirmacion mt-5 rsvp-container">
+                    <h3 class="text-center py-4 elegant-subtitle">¿Nos acompañas?</h3>
+                    <form id="formulario-asistencia" class="p-4 elegant-form">
+                        <div class="mb-4">
+                            <input type="text" class="form-control elegant-input" id="nombre" placeholder="Nombre y Apellido" required>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-elegant">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

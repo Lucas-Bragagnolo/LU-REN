@@ -438,5 +438,25 @@ h4 {
     color: #8C3712;
 }
 
+.nombres-finales {
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.nombres-finales {
+    font-family: 'Iniria Serif', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    color: #8F7230;
+}
+
+.nombres-finales span {
+    
+    color: #385858;
+}
+
 
 

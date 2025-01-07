@@ -22,19 +22,37 @@
         <div class="contenedor-info bg-light">
             <h3 class="text-center mt-3">Faltan</h3>
             <div class="countdown-container">
-                            <div class="countdown-item">
-                                <span id="dias" class="countdown-number">00</span>
-                                <span class="countdown-label">Días</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="horas" class="countdown-number">00</span>
-                                <span class="countdown-label">Horas</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="minutos" class="countdown-number">00</span>
-                                <span class="countdown-label">Minutos</span>
-                            </div>
-            </div>
+                <div class="countdown-item">
+                    <span id="dias" class="countdown-number">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="horas" class="countdown-number">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutos" class="countdown-number">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <script>
+                    function actualizarCuentaRegresiva() {
+                        const fechaEvento = new Date('2025-02-15T19:00:00').getTime();
+                        const ahora = new Date().getTime();
+                        const diferencia = fechaEvento - ahora;
+
+                        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+
+                        document.getElementById('dias').textContent = dias.toString().padStart(2, '0');
+                        document.getElementById('horas').textContent = horas.toString().padStart(2, '0');
+                        document.getElementById('minutos').textContent = minutos.toString().padStart(2, '0');
+                    }
+
+                    setInterval(actualizarCuentaRegresiva, 1000);
+                    actualizarCuentaRegresiva();
+                </script>            
+                </div>
             <div class="fiesta elegant-section">
                 <h2 class="text-center elegant-title">Ceremonia & Fiesta</h2>
                 <p class="text-center rsvp-notice">Te esperamos para compartir con nosotros este momento tan especial.</p>

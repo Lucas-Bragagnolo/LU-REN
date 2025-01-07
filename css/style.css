@@ -115,7 +115,7 @@ h1 span {
 .countdown-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem 0;
     flex-wrap: wrap;
 }
@@ -135,7 +135,7 @@ h1 span {
     font-style: normal;
     background: #f8f9fa;
     padding: 1rem;    
-    min-width: 100px;    
+    min-width: 50px;    
     text-align: center;   
 }
 

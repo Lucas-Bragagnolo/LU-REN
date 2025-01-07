@@ -206,6 +206,21 @@ h1 span {
 
 }
 
+.elegant-button {
+    background-color: #ffffff;
+    border: 1px solid #385858;
+    padding: 10px 20px;
+    color: #385858;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.elegant-button:hover {
+    background-color: #385858;
+    color: #ffffff;
+    border-color: #385858;
+    cursor: pointer;
+}
 
 
 .venue-name {
@@ -269,7 +284,7 @@ h1 span {
 }
 
 .btn-elegant:hover {
-    background-color: #6d2a0e;
+    background-color: #385858;
     color: #FDFDFD;
 }
 
@@ -279,7 +294,7 @@ h1 span {
     }
     
     .elegant-subtitle {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     
     .venue-name {
@@ -299,7 +314,7 @@ h1 span {
 
 .confirmacion {
     background-color: #fff;
-    border: 1px solid #8C3712;
+    border: 1px solid #385858;
 }
 
 .elegant-form {
